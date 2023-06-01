@@ -1,8 +1,10 @@
-
 package com.crio.session1.activity3;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class Trade {
-  
+
   private String symbol;
   private int quantity;
   private String purchaseDate;

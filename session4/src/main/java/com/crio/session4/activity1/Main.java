@@ -16,7 +16,12 @@ public class Main {
         List<Employee> tempList = new ArrayList<Employee>();
         
         // Complete the logic to print the list of employees whose name starts with ‘A’
-
+        for(Employee e:employeesList){
+            if(e.getName().startsWith("A"))
+            {
+                tempList.add(e);
+            }
+        }
 
         for(Employee e : tempList){
             System.out.println("Name :- " + e.getName() +" ,Designation :- " + e.getDesignation() + " , Age :- " + e.getAge());
@@ -49,4 +54,3 @@ public class Main {
         return listOfEmployees;
     }
 }
-

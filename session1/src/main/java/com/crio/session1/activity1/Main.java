@@ -2,7 +2,7 @@ package com.crio.session1.activity1;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 
@@ -12,6 +12,9 @@ class Main {
    // Initialize ObjectMapper
    // De-Serialize and print the POJOs
    // Serialize the POJOs to outputFile 
+   ObjectMapper om = new ObjectMapper();
+   Trade[] trades = om.readValue(inputFile, Trade[].class);
+   om.writeValue(outputFile, trades);
   }
 
 

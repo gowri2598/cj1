@@ -13,7 +13,7 @@ public class SimpleBlockingQueue {
 
     Queue<Object> queue = new LinkedList<>();
     
-    public synchronized void put(Object x) throws InterruptedException {
+    public void put(Object x) throws InterruptedException {
         //simulate slow processing
         TimeUnit.SECONDS.sleep(3);
         // if the queue is full, then wait for the consumer to consume an item
@@ -27,7 +27,7 @@ public class SimpleBlockingQueue {
         notifyAll();
     }
 
-    public synchronized Object take() throws InterruptedException {
+    public  Object take() throws InterruptedException {
         //simulate slow processing
         TimeUnit.SECONDS.sleep(1);
         // if the queue is empty, then wait for the producer to produce an item

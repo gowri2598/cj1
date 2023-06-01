@@ -2,12 +2,20 @@ package com.crio.session8.activity1;
 
 public class VolatileKeywordExample {
     private static boolean sayHello = false;
-    // private static volatile boolean sayHello = false;
+    //private static volatile boolean sayHello = false;
+
+    public void notifyMethod() {
+        synchronized(this){
+            notify();
+        }
+    }
 
     public static void main(String[] args) throws InterruptedException {
 
         Thread thread = new Thread(() -> {
            while(!sayHello) {
+            System.out.println("in loop");
+
            }
 
            System.out.println("Hello World!");
@@ -25,7 +33,12 @@ public class VolatileKeywordExample {
         sayHello = true;
 
         Thread.sleep(1000);
+        
         System.out.println("Say Bye..");
         sayHello = false;
+
+        //Thread.notifyMethod();
+        //thread.notify();//IllegalMonitorStateException
+        
     }
 }

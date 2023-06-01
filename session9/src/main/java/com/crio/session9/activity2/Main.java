@@ -9,7 +9,7 @@ public class Main {
  
     private static void init()
     {
-        ThreadPool pool = new ThreadPool(10);
+        ThreadPool pool = new ThreadPool(5);
         
         Email email = null;
         EmailJob  emailJob = new EmailJob();
@@ -43,5 +43,4 @@ public class Main {
         }
         pool.shutdownPool();
     }
-
 }

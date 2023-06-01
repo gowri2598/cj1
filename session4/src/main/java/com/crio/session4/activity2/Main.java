@@ -20,6 +20,9 @@ public class Main {
         System.out.println("Calling terminal operation: collect");
         List<String> employeeNames = employeeNamesStream.collect(Collectors.toList());
         System.out.println(employeeNames);
+        //Stream s = Stream.empty();
+       
+
     }
  
     public static List<Employee> getListOfEmployees() {
@@ -39,5 +42,3 @@ public class Main {
         return listOfEmployees;
     }
 }
-
-

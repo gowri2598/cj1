@@ -5,8 +5,8 @@ public class MatrixMultiplication {
     public static void main(String[] args) {
 
         long startTime = System.currentTimeMillis();
-        int[][] m1 = MatrixGenerator.generateMatrix(5, 5);
-        int[][] m2 = MatrixGenerator.generateMatrix(5, 5);
+        int[][] m1 = MatrixGenerator.generateMatrix(100, 100);
+        int[][] m2 = MatrixGenerator.generateMatrix(100, 100);
       
         multiply(m1, m2);
         long endTime = System.currentTimeMillis();

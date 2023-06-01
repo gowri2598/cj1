@@ -4,13 +4,13 @@ package com.crio.session1.activity1;
 public class Trade {
   
   public String symbol;
-  public int quantity;
+  public String quantity;
   public String purchaseDate;
   
   public Trade() {
   }
   
-  public Trade(String symbol, int quantity, String purchaseDate) {
+  public Trade(String symbol, String quantity, String purchaseDate) {
     this.symbol = symbol;
     this.quantity = quantity;
     this.purchaseDate = purchaseDate;

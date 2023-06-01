@@ -9,8 +9,8 @@ public class MatrixMultiplicationParallel {
     public static void main(String[] args) {
 
         long startTime = System.currentTimeMillis();
-        int[][] m1 = MatrixGenerator.generateMatrix(2000, 2000);
-        int[][] m2 = MatrixGenerator.generateMatrix(2000, 2000);
+        int[][] m1 = MatrixGenerator.generateMatrix(100, 100);
+        int[][] m2 = MatrixGenerator.generateMatrix(100, 100);
       
         int[][] result = new int[m1.length][m2[0].length];
         multiply(m1, m2, result);

@@ -6,8 +6,9 @@ public class Main {
         // Creating producer and consumer threads
         Thread producer = new Thread(new Producer(simpleBlockingQueue),"Producer 1");
         Thread consumer = new Thread(new Consumer(simpleBlockingQueue),"Consumer 1"); 
- 
+        
         producer.start();
         consumer.start();
+        
     }
 }

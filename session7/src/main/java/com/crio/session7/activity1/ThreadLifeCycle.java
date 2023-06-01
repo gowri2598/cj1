@@ -2,8 +2,6 @@ package com.crio.session7.activity1;
 
 public class ThreadLifeCycle implements Runnable{
 
-
-
  public static Thread thread1;
  public static ThreadLifeCycle threadLifeCycle;
 
@@ -45,13 +43,13 @@ public class ThreadLifeCycle implements Runnable{
    e.printStackTrace();
   }
   System.out.println("State of " + thread2.getName() + " after calling sleep() method on it - " + thread2.getState());
-
+/* 
   try {
    // waiting for thread2 to die / complete it's execution
    thread2.join();
   } catch (InterruptedException e) {
    e.printStackTrace();
-  }
+  }*/
   System.out.println("State of " + thread2.getName() + " when it has finished it's execution - " + thread2.getState());
  }
 

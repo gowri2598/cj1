@@ -12,7 +12,7 @@ import javax.imageio.ImageIO;
 
 public class Main {
     
-    public static final String FILE_SLUG = "ULTRA_LOW";
+    public static final String FILE_SLUG = "LOW";
     public static final String FILE_EXTENSION = ".jpg";
     
 

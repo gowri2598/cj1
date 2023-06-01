@@ -14,16 +14,28 @@ public class Main {
 
         System.out.println("Counter Total Count: " + counter.getCount());
 
-        StaticCounterIncrementor staticIncrementingThread = new StaticCounterIncrementor();
-        StaticCounterDecrementor staticDecrementingThread = new StaticCounterDecrementor();
+    //     Counter counter2 = new Counter();
+    //     CounterIncrementor incrementingThread2 = new CounterIncrementor(counter2);
+    //     //CounterDecrementor decrementingThread2 = new CounterDecrementor(counter2);
 
-        staticIncrementingThread.start();
-        staticDecrementingThread.start();
+    //     incrementingThread2.start();
+    //    // decrementingThread2.start();
 
-        staticIncrementingThread.join();
-        staticDecrementingThread.join();
+    //     incrementingThread2.join();
+    //    // decrementingThread2.join();
 
-        System.out.println("Static Counter Total Count: " + StaticCounter.getCount());
+    //     System.out.println("Counter Total Count: " + counter2.getCount());
+
+        // StaticCounterIncrementor staticIncrementingThread = new StaticCounterIncrementor();
+        // StaticCounterDecrementor staticDecrementingThread = new StaticCounterDecrementor();
+
+        // staticIncrementingThread.start();
+        // staticDecrementingThread.start();
+
+        // staticIncrementingThread.join();
+        // staticDecrementingThread.join();
+
+        // System.out.println("Static Counter Total Count: " + StaticCounter.getCount());
 
     }
 }

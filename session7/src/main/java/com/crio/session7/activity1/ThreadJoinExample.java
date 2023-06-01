@@ -7,15 +7,17 @@ public class ThreadJoinExample {
          PrintNumbers t1 = new PrintNumbers(1, 10);
          PrintNumbers t2 = new PrintNumbers(11, 20);
          PrintNumbers t3 = new PrintNumbers(21, 30);
-       
+         t1.setPriority(9);
          t1.start();
-         //t1.join();
-       
-         t2.start();
-         //t2.join();
-       
+         t1.join();
+
+         t2.setPriority(1);
+         t2.start();t1.setPriority(9);
+         t2.join();
+
+         t3.setPriority(6);
          t3.start();
-         //t3.join();
+         t3.join();
        
          System.out.println("All threads completed excution.");
          System.out.println(Thread.currentThread().getName() + " complete execution");

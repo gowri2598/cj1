@@ -21,6 +21,5 @@ public class QuotesList {
     @Override
     public String toString() {
         return "QuotesList [quotesList=" + quotesList + "]";
-    }
-    
+    }   
 }
